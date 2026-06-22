@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'agent-01' }
     stages {
         stage('Intégration Continue (CI)') {
             steps {
