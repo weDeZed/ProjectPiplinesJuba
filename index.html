@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet DevOps - TP1</title>
+    <style>
+        /* Variables de couleurs */
+        :root {
+            --primary-color: #0070f3; /* Bleu Vercel */
+            --bg-color: #111111;
+            --text-color: #ffffff;
+            --secondary-text: #888888;
+        }
+
+        /* Réinitialisation de base */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* En-tête */
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        .contact-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Contenu principal */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(#fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: var(--secondary-text);
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Adaptation pour les téléphones */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DevOps TP1</div>
+        <nav>
+            <!-- Lien vers ton adresse mail -->
+            <a href="mailto:alimousantou@gmail.com" class="contact-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Landing Page Déployée !</h1>
+        <p>Cette page a été mise en ligne avec succès sur Vercel. Elle marque la première étape de mon projet d'intégration et de déploiement continus (CI/CD).</p>
+        <a href="https://github.com" target="_blank" class="cta-button">Voir mon GitHub</a>
+    </main>
+
+    <footer>
+        &copy; 2026 - TP1 Architecture DevOps
+    </footer>
+</body>
+</html>
